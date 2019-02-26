@@ -22,12 +22,18 @@ public class Stret {
 			o[i].nastav(50, true);
 		}
 
-		for (int i = 20; i < 40; i++) {
+		for (int i = 20; i < 30; i++) {
 			r[i] = new Rytier(140, new OcelovyMec(i));
 			o[i] = new ZlyObor();
 			o[i].nastavEnergiu(50);
 		}
 
+		for (int i = 30; i < 40; i++) {
+			r[i] = new KrepyRytier(140, new HrdzavyMec(i));
+			o[i] = new ZlyObor();
+			o[i].nastavEnergiu(50);
+		}
+		
 		for (int i = 40; i < 100; i++) {
 			r[i] = new Rytier(140, new SvetelnyMec(i));
 			o[i] = new Obor();
@@ -50,5 +56,8 @@ public class Stret {
 		//obor.zjedz();	//nebude fungovat
 		ZlyObor ZlyZlobor = (ZlyObor) zlobor; // ((ZlyObor) zlobor).zjedz[99]; //toto bude tiez fungovat
 		ZlyZlobor.zjedz(r[99]); //po pretypovani bude
+		
+		//2c netreba nic menit
+		//2d rytier nic, mec treba pridat dalsiu metodu aby som vedel ako sa spravat k dalsiemu rytierovi, inak by osm sa k nemu spraval ako k default -> Rytier
 	}
 }

@@ -1,14 +1,14 @@
 package postavy;
 
-public class StatocnyRytier extends Rytier {
+public class KrepyRytier extends Rytier{
 
-	public StatocnyRytier(int energia) {
+	public KrepyRytier(int energia) {
 		super(energia);
 	}
-	public StatocnyRytier(int energia, Mec mec) {
+	public KrepyRytier(int energia, Mec mec) {
 		super(energia, mec);
 	}
-	public StatocnyRytier() {
+	public KrepyRytier() {
 	}
 /*
  	// udriSvetelnymMecomStatocyRytier() 
