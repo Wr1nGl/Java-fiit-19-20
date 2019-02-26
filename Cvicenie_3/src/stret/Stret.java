@@ -11,6 +11,8 @@ public class Stret {
 	}
 	
 	public static void main(String[] args) {
+		
+		Energia zlobor = new ZlyObor();
 		Obor[] o = new Obor[100];
 		Rytier[] r = new Rytier[100];
 
@@ -44,5 +46,9 @@ public class Stret {
 		//System.out.println(zistiRozdielEnergii(o[11], r[11]));
 		//System.out.println(zistiRozdielEnergii(r[10], o[0]));
 		//System.out.println(zistiRozdielEnergii(r[2], r[1]));
+		
+		//obor.zjedz();	//nebude fungovat
+		ZlyObor ZlyZlobor = (ZlyObor) zlobor; // ((ZlyObor) zlobor).zjedz[99]; //toto bude tiez fungovat
+		ZlyZlobor.zjedz(r[99]); //po pretypovani bude
 	}
 }
